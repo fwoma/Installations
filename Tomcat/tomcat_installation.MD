@@ -9,18 +9,19 @@ Download tomcat packages from  https://tomcat.apache.org/download-80.cgi onto /o
 ```sh 
   # create tomcat directory
   cd /opt
-  wget http://mirrors.fibergrid.in/apache/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.5.35.tar.gz
-  tar -xvzf /opt/apache-tomcat-8.5.35.tar.gz
+  wget wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.84/bin/apache-tomcat-9.0.84.tar.gz
+  tar -xvzf /opt/apache-tomcat-9.0.84.tar.gz
+
 ```
 give executing permissions to startup.sh and shutdown.sh which are under bin. 
 ```sh
-   chmod +x /opt/apache-tomcat-8.5.35/bin/startup.sh shutdown.sh
+chmod +x /opt/apache-tomcat-9.0.84/bin/startup.sh /opt/apache-tomcat-9.0.84/bin/shutdown.sh
 ```
 
 create link files for tomcat startup.sh and shutdown.sh 
 ```sh
-  ln -s /opt/apache-tomcat-8.5.35/bin/startup.sh /usr/local/bin/tomcatup
-  ln -s /opt/apache-tomcat-8.5.35/bin/shutdown.sh /usr/local/bin/tomcatdown
+  ln -s /opt/apache-tomcat-9.0.84/bin/startup.sh /usr/local/bin/tomcatup
+  ln -s /opt/apache-tomcat-9.0.84/bin/shutdown.sh /usr/local/bin/tomcatdown
   tomcatup
 ```
 #### check point :
